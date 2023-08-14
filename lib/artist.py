@@ -1,10 +1,11 @@
 class Artist:
     # We initialise with all of our attributes
     # Each column in the table should have an attribute here
-    def __init__(self, id, name, genre):
+    def __init__(self, id, name, genre, albums = None):
         self.id = id
         self.name = name
         self.genre = genre
+        self.albums = albums or []
 
     # This method allows our tests to assert that the objects it expects
     # are the objects we made based on the database records.
